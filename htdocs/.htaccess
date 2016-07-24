@@ -1,0 +1,48 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^couleur-agencement.com$
+RewriteRule ^(.*)   http://www.couleur-agencement.com/$1  [QSA,L,R=301]
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+
+
+### Caching mod_headers + mod_expires
+ 
+<IfModule mod_expires.c>
+ 
+ # Turn on Expires and set default to now
+ ExpiresActive On
+ ExpiresDefault "now"
+ 
+ # Set up caching on media files for 1 month
+ <FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|swf)$">
+ ExpiresDefault "access plus 1 month"
+ </FilesMatch>
+ 
+ # Set up caching on images, CSS and JS files for 1 week
+ <FilesMatch "\.(gif|jpg|jpeg|png)$">
+ ExpiresDefault "access plus 1 week"
+ </FilesMatch>
+ 
+ # Set up 1 hour caching on commonly updated files
+ <FilesMatch "\.(xml|xsl|txt)$">
+ ExpiresDefault "access plus 1 hour"
+ </FilesMatch>
+ 
+ # Force no caching for dynamic files
+ <FilesMatch "\.(php|cgi|pl|js|css|html|htm)$">
+ ExpiresActive Off
+ </FilesMatch>
+
+</IfModule>
+ 

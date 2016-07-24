@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html, body, #wrap {
+  height: 100%; }
+
+body > #wrap {
+  height: auto;
+  min-height: 100%; }
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 48px;
+  margin-top: -48px; }
+
+#content {
+  padding-bottom: 48px;
+  width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto; }
+
+body {
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px; }
+
+.clear {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both; }
+
+img.logo {
+  width: 95%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; }
+
+.contact {
+  margin-top: 10px;
+  position: relative;
+  width: 46%; }
+  .contact a, .contact a:link, .contact a:visited, .contact a:hover, .contact a:active {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold; }
+  .contact a:hover {
+    color: grey; }
+
+#contactN {
+  left: 2%;
+  width: 100%;
+  text-align: left; }
+
+#contactJ {
+  right: 2%;
+  width: 100%;
+  text-align: right; }
+
+ul.list_task {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+  ul.list_task li {
+    margin: 10px 0; }
+  ul.list_task li:first-letter {
+    font-weight: bold;
+    background-color: yellow;
+    color: black; }
+  ul.list_task li:nth-child(2n):first-letter {
+    font-weight: bold;
+    background-color: black;
+    color: white; }
+
+.address {
+  margin: 10px 0px; }
+  .address a, .address a:link, .address a:visited, .address a:hover, .address a:active {
+    color: black;
+    text-decoration: none; }
+  .address a:hover {
+    color: grey; }
+
+a.email, a.email:link, a.email:visited, a.email:hover, a.email:active {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background-color: black;
+  border-top: solid 10px yellow;
+  text-decoration: none; }
+
+a.email:hover {
+  color: grey; }
+
+@media screen and (max-height: 600px) {
+  img.logo {
+    margin-top: 5px; }
+
+  .contact {
+    margin-top: 5px; }
+
+  ul.list_task {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+  .address {
+    margin-bottom: 5px; } }
