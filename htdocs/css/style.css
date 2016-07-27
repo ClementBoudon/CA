@@ -42,7 +42,7 @@ q, blockquote {
 a img {
   border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 html, body, #wrap {
@@ -159,3 +159,23 @@ a.email:hover {
 
   .address {
     margin-bottom: 5px; } }
+.realisations-container img.logo {
+  width: 70%;
+  max-width: 600px; }
+
+.realisations-container h1 {
+  margin-top: 5px;
+  margin-bottom: 15px; }
+
+.realisation-caption {
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: relative;
+  top: -30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #FFFFFF;
+  z-index: 1;
+  text-decoration: none; }
