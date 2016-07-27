@@ -172,10 +172,13 @@ a.email:hover {
   width: 100%;
   height: 20px;
   position: relative;
-  top: -30px;
+  top: -33px;
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 5px;
   padding-bottom: 5px;
   color: #FFFFFF;
   z-index: 1;
+  text-decoration: none; }
+
+a:link .realisation-caption, a:visited .realisation-caption, a:active .realisation-caption {
   text-decoration: none; }
