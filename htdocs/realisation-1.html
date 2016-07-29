@@ -68,11 +68,11 @@
           ga('send', 'pageview');
         </script>
 
-        <link type="text/css" rel="stylesheet" href="js/galleria/themes/classic/galleria.classic.css">
+        <link type="text/css" rel="stylesheet" href="js/galleria/themes/folio/galleria.folio.css">
         <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
         <script type="text/javascript" src="js/galleria/galleria-1.4.2.min.js"></script>
         <style>
-            .galleria{ width: 700px; height: 400px; background: #000 }
+            .galleria{ width: 100%; height: 400px; }
         </style>
 
     </head>
@@ -93,18 +93,18 @@
                 </div>
                 <!-- <div class="grid-1-small-1"> -->
                 <div class="galleria">
-                    <img src="img/realisations/1/photo1.jpg">
-                    <img src="img/realisations/1/photo2.jpg">
-                    <img src="img/realisations/1/photo3.jpg">
-                    <img src="img/realisations/1/photo4.jpg">
-                    <img src="img/realisations/1/photo5.jpg">
-                    <img src="img/realisations/1/photo6.jpg">
-                    <img src="img/realisations/1/photo7.jpg">
-                    <img src="img/realisations/1/photo8.jpg">
-                    <img src="img/realisations/1/photo9.jpg">
-                    <img src="img/realisations/1/photo10.jpg">
-                    <img src="img/realisations/1/photo11.jpg">
-                    <img src="img/realisations/1/photo11.jpg">
+                    <!-- <a href="/img/large1.jpg"><img src="/img/thumb1.jpg" data-big="/img/big1.jpg" data-title="My title" data-description="My description"></a> -->
+                    <a href="img/realisations/1/photo1.jpg"><img src="img/realisations/1/photo1.jpg" data-big="img/realisations/1/photo1.jpg" data-title="My title" data-description="My description"></a>
+                    <a href="img/realisations/1/photo2.jpg"><img src="img/realisations/1/photo2.jpg" data-big="img/realisations/1/photo2.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo3.jpg"><img src="img/realisations/1/photo3.jpg" data-big="img/realisations/1/photo3.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo4.jpg"><img src="img/realisations/1/photo4.jpg" data-big="img/realisations/1/photo4.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo5.jpg"><img src="img/realisations/1/photo5.jpg" data-big="img/realisations/1/photo5.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo6.jpg"><img src="img/realisations/1/photo6.jpg" data-big="img/realisations/1/photo6.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo7.jpg"><img src="img/realisations/1/photo7.jpg" data-big="img/realisations/1/photo7.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo8.jpg"><img src="img/realisations/1/photo8.jpg" data-big="img/realisations/1/photo8.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo9.jpg"><img src="img/realisations/1/photo9.jpg" data-big="img/realisations/1/photo9.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo10.jpg"><img src="img/realisations/1/photo10.jpg" data-big="img/realisations/1/photo10.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/1/photo11.jpg"><img src="img/realisations/1/photo11.jpg" data-big="img/realisations/1/photo11.jpg" data-title="My title" data-description="My description">
                 </div>
             </div>
         </div>
@@ -117,7 +117,11 @@
             </script>
         </div>
                 <script>
-                    Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+                    Galleria.loadTheme('js/galleria/themes/folio/galleria.folio.min.js');
+                    Galleria.configure({
+                        transition: 'fade',
+                        imageCrop: true
+                    });
                     Galleria.run('.galleria');
                 </script>
     </body>
