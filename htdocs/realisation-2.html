@@ -6,7 +6,7 @@
 
         <meta name="google-site-verification" content="Yy7aKJCRAWzkpfR5drb8EnE2jQpRKLCHj-bgDzuyGfo" />
 
-        <title>Couleur Agencement - Realisations</title>
+        <title>Couleur Agencement - Realisation 2</title>
         <meta name="description" content="Menuiserie agencement, aménagement d'espace, concept sur mesure et organisation de chantier." >
 
         <!-- OpenGraph infos (only one phone number in business contact data) -->
@@ -74,6 +74,15 @@
           ga('send', 'pageview');
         </script>
 
+        <link type="text/css" rel="stylesheet" href="js/galleria/themes/folio/galleria.folio.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/galleria/galleria-1.4.2.min.js"></script>
+        <style>
+            .galleria{
+                width: 100%;
+                height: 400px;
+            }
+        </style>
 
     </head>
     <body>
@@ -85,39 +94,22 @@
                             <a href="index.html"><!-- <img class="logo" alt="Couleur Agencement"  src="http://www.couleur-agencement.com/img/logo-1000x500-trans-opti.png"
                                                             srcset="http://www.couleur-agencement.com/img/logo-1000x500-trans-opti.png 1x,
                                                                     http://www.couleur-agencement.com/img/logo-500x250-trans.png 500w 1x,
-                                                                    http://www.couleur-agencement.com/img/logo-1000x500-trans-opti.png 500w 2x"> --><img class="logo" alt="Couleur Agencement"  src="img/logo-1000x500-trans.png"
-                                                            ></a>
+                                                                    http://www.couleur-agencement.com/img/logo-1000x500-trans-opti.png 500w 2x"> --><img class="logo" alt="Couleur Agencement"  src="img/logo-1000x500-trans.png"></a>
 
-                            <h1>Nos r&eacute;alisations</h1>
+                            <h1>R&eacute;alisation 2</h1>
                         </div>
                     </div>
-                    <div class="grid-3-small-1">
-                        <div class="realisations-item" id="realisation-1">
-                            <div class="content">
-                                <a href="realisation-1.html">
-                                    <img src="img/realisations/1/cover.jpg" alt="R&eacute;lisation 1" class="realisation-cover" width="100%">
-                                    <span class="realisation-caption">R&eacute;alisation 1</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="realisations-item" id="realisation-2">
-                            <div class="content">
-                                <a href="realisation-2.html">
-                                    <img src="img/realisations/2/cover.jpg" alt="R&eacute;lisation 2" class="realisation-cover" width="100%">
-                                    <span class="realisation-caption">R&eacute;alisation 2</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="realisations-item" id="realisation-3">
-                            <div class="content">
-                                <a href="realisation-3.html">
-                                    <img src="img/realisations/3/cover.jpg" alt="R&eacute;lisation 3" class="realisation-cover" width="100%">
-                                    <span class="realisation-caption">R&eacute;alisation 3</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+                <!-- <div class="grid-1-small-1"> -->
+                <div class="galleria">
+                    <!-- <a href="/img/large1.jpg"><img src="/img/thumb1.jpg" data-big="/img/big1.jpg" data-title="My title" data-description="My description"></a> -->
+                    <a href="img/realisations/2/photo1.jpg"><img src="img/realisations/2/photo1.jpg" data-big="img/realisations/2/photo1.jpg" data-title="My title" data-description="My description"></a>
+                    <a href="img/realisations/2/photo2.jpg"><img src="img/realisations/2/photo2.jpg" data-big="img/realisations/2/photo2.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/2/photo3.jpg"><img src="img/realisations/2/photo3.jpg" data-big="img/realisations/2/photo3.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/2/photo4.jpg"><img src="img/realisations/2/photo4.jpg" data-big="img/realisations/2/photo4.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/2/photo5.jpg"><img src="img/realisations/2/photo5.jpg" data-big="img/realisations/2/photo5.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/2/photo6.jpg"><img src="img/realisations/2/photo6.jpg" data-big="img/realisations/2/photo6.jpg" data-title="My title" data-description="My description">
+                    <a href="img/realisations/2/photo7.jpg"><img src="img/realisations/2/photo7.jpg" data-big="img/realisations/2/photo7.jpg" data-title="My title" data-description="My description">
                 </div>
             </div>
         </div>
@@ -129,5 +121,36 @@
                 document.write("<a itemprop='email' class='email' href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
             </script>
         </div>
+                <script>
+                    Galleria.loadTheme('js/galleria/themes/folio/galleria.folio.min.js');
+                    Galleria.configure({
+                        transition: 'fade',
+                        imageCrop: true,
+                        Carousel: false
+
+                    });
+
+                    Galleria.ready(function() {
+                        var thumbcont=this.$('thumbnails-container'),
+                        thumb=this.$('thumbnails-list'),
+                        thumbw,thumbmarg,left,contw,
+                        center=function(){
+                            contw=thumbcont.width(),
+                            left=((contw-Math.floor(contw/thumbw)*thumbw)/2+thumbmarg)+'px';
+                            thumb.css('left',left);
+                        };
+                        this.bind('thumbnail', function(e) {
+                            if (!thumbw) {
+                                var thumbp=$(e.thumbTarget).parent();
+                                thumbw=thumbp.outerWidth(true);
+                                thumbmarg=(parseFloat(thumbp.css('margin-right'))-parseFloat(thumbp.css('margin-left')))/2;
+                                center();
+                            }
+                        });
+                        $(window).on('resize',center);
+                    });
+
+                    Galleria.run('.galleria');
+                </script>
     </body>
 </html>
