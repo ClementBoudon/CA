@@ -121,6 +121,8 @@ ul.list_task {
   text-align: left; }
   ul.list_task li {
     margin: 10px 0; }
+    ul.list_task li a, ul.list_task li a:link, ul.list_task li a:visited, ul.list_task li a:active {
+      text-decoration: underline; }
   ul.list_task li:first-letter {
     font-weight: bold;
     background-color: yellow;
@@ -129,6 +131,9 @@ ul.list_task {
     font-weight: bold;
     background-color: black;
     color: white; }
+  ul.list_task li:last-child {
+    text-align: center;
+    margin-top: 20px; }
 
 .address {
   margin: 10px 0px; }

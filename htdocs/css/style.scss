@@ -85,6 +85,10 @@ ul.list_task{
 
 	li{
 		margin:10px 0;
+
+		a, a:link,a:visited,a:active{
+			text-decoration: underline;
+		}
 	}
 	li:first-letter{
 		font-weight: bold;
@@ -96,7 +100,13 @@ ul.list_task{
 		background-color: black;
 		color: white;
 	}
+	li:last-child{
+		text-align: center;
+		margin-top: 20px;
+	}
+
 }
+
 
 .address{
 	margin: 10px 0px;
